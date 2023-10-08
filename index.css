@@ -1,0 +1,160 @@
+
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: black;
+    /* min-width: 100vw;
+    min-height: 100vh; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#search-section div {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+
+#serach-content-section {
+    min-height: 100vh;
+    width: 100vw;
+    /* margin-top: 50px; */
+    padding: 5%;
+}
+#movie-description-section{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 5%;
+}
+.serach-result{
+    min-height: 100vh;
+    width: 100vw;
+    /* margin-top: 50px; */
+    padding: 5%;
+}
+.genere {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.genere-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: auto;
+    padding: 10px;
+    background: #1a1a1a;
+    color: white;
+
+}
+
+.color-white{
+    color: white;
+}
+
+.genere-content a {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+	opacity: 0.8;
+}
+
+
+.genere-content span {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    text-align:left;
+    
+}   
+
+.genere-content span a{
+    text-decoration: none;
+    color: white;
+}
+
+.genere-content span:hover {
+    text-overflow:clip;
+    overflow:visible;
+   
+}
+
+
+.button-fav button{
+
+    background: white;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+/* Footer */
+footer {
+	/* position:sticky; */
+    position:fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(30, 28, 28);
+	color: white;
+	text-align: center;
+}
+
+/* MovieDetails */
+#movie-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+   
+
+}
+
+#movie-image{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #1a1a1a;
+    color: white;
+}
+
+#movie-image a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    /* border-style: dashed; */
+
+    background-repeat: no-repeat;
+	background-position:center;
+	background-size:contain;
+	opacity: 0.8;
+}
+
+#movie-details {
+    width: 400px;
+
+}
+
+#description-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    text-align:left;
+    
+}

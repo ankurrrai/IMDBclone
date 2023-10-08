@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">IMDB-Home</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> 
+    
+</head>
+<body>
+    <div id="container">
+        <section id="navbar-section">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="IMDB">IMDB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" id="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="Favourites">Favourites</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>          
+        </section>
+
+        <section id="search-section">   
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <input class="form-control me-2" id="serach" type="text" placeholder="Search" aria-label="Search">
+                    <button id="search-button" class="btn btn-outline-success" type="button" style="color: white; border-color: white;">Search</button>
+                
+                </div>
+                
+            </div>
+        </section>
+
+
+
+            
+            
+        <section id="serach-content-section">
+
+            <div id="search-result" style="display: none;">
+                <div id="result-header" class="color-white">
+                    <br>
+                    <span style="display: flex; justify-content: space-between;">
+                        <h1>Result</h1>
+                        <i id="close-result" class="fa-regular fa-circle-xmark"></i>
+                    </span>
+                    <br>
+                    
+                </div>
+                
+                <div id="result-catgeory" class="genere">
+    
+                    
+    
+                </div>
+            </div>
+            
+
+            <div id="fav-result">
+                <div id="fav-catgeory-header" class="color-white">
+                    <br>
+                    <h1>Your Favourite Movies <sub><a href="" id="Favourites-serach-content" style="text-decoration: none; color: white;"><i class="fa-solid fa-link"></i></a></sub></h1>
+                    <br>
+                    
+                </div>
+                
+    
+                <div id="fav-catgeory" class="genere">
+                    
+                </div>
+            </div>
+            
+            <div id="fixed-result">
+                <div id="bolloywood-category-header"  class="color-white">
+                    <br>
+                    <h1>Bollywood Movies <sub><a href="#serach" style="text-decoration: none; color: white;"><i class="fa-solid fa-magnifying-glass-plus"></i></a></sub></h1>
+                    <br>
+                </div>  
+                
+    
+                <div id="bolloywood-category" class="genere">
+                   
+                    
+    
+                </div>
+    
+                
+                <div id="comedy-category-header"  class="color-white">
+                    <br>
+                    <h1>Comedy Movies <sub><a href="#serach" style="text-decoration: none; color: white;"><i class="fa-solid fa-magnifying-glass-plus"></i></a></sub></h1>
+                    <br>
+                </div>
+    
+                <div id="comedy-category" class="genere">
+    
+                    
+                </div>
+     
+                <div id="hollywood-category-header"  class="color-white">
+                    <br>
+                    <h1>Hollywood Movies <sub><a href="#serach" style="text-decoration: none; color: white;"><i class="fa-solid fa-magnifying-glass-plus"></i></a></sub></h1>
+                    <br>
+                </div>
+                
+    
+                <div id="hollywood-category" class="genere">
+     
+                </div>
+            </div>
+
+        </section>
+
+        <section id="movie-description-section" style="display: none;">
+
+        </section>
+
+        <section id="footer-section">
+            <footer>
+                <div>
+                    <a href="#" style="text-decoration: none;" class="color-white" id="Home-bottom">Home</a>
+                    <span>&nbsp;&nbsp;</span>
+                    <a href="#" style="text-decoration: none;" class="color-white" id="Favourites-bottom">Favourites</a>
+                     
+                </div>
+               
+                <div>
+                    <div>
+                        <a href="https://forms.gle/hoCwgnvniCaLgzF29" target="_blank" style="text-decoration: none;" class="color-white">Feedback</a>
+                        <span>&nbsp;&nbsp;</span>
+                        <a href="https://github.com/ankurrrai" target="_blank"  style="text-decoration: none;" class="color-white">GitHub</a>
+                        <span>&nbsp;&nbsp;</span>
+                    <a href="https://www.linkedin.com/in/ankur-rai-b49830158/" target="_blank"  style="text-decoration: none;" class="color-white">Linkedin</a>
+                    </div>
+                    
+                </div>
+            </footer>
+        </section>
+        
+    </div>
+    <!-- bootstrap -->
+    <script src="https://kit.fontawesome.com/0498cfb1c8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
