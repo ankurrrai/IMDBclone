@@ -111,7 +111,7 @@ if (favortieMoviesList.length==0){
 function renederfavitems(){
     if (favortieMoviesList.length==0){
         document.getElementById('fav-catgeory-header').style.display='none'
-        return
+        
     } else{
         document.getElementById('fav-catgeory-header').style.display='block'
     }
@@ -229,10 +229,12 @@ function favtItemUpdation(e){
             }
                 
         }
-
-        if (targetMovietitle.toUpperCase()==(document.getElementById('result-catgeory').children[0].children[2].children[0].children[0].innerHTML).toUpperCase()) {
-            document.getElementById(document.getElementById('result-catgeory').children[0].id).children[1].children[0].children[1].style.color=''
+        if (document.getElementById('result-catgeory').childElementCount!=0) {
+            if (targetMovietitle.toUpperCase()==(document.getElementById('result-catgeory').children[0].children[2].children[0].children[0].innerHTML).toUpperCase()) {
+                document.getElementById(document.getElementById('result-catgeory').children[0].id).children[1].children[0].children[1].style.color=''
+            }
         }
+        
 
         deletemovies(targetMovietitle);
         
